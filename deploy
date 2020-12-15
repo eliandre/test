@@ -79,5 +79,5 @@ if [ ! "$(docker ps -q -f name=my-app)" ]; then
         cmd "docker rm my-app"
     fi
     # run your container
-    cmd "docker run -d --name my-app:$TIMESTAMP"
+    cmd "docker run my-app:$TIMESTAMP"
 fi
