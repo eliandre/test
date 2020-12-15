@@ -69,6 +69,6 @@ cmd 'npm run test'
 # Build an image
 cd ..
 TIMESTAMP=`date +%Y-%m-%d_%H-%M-%S`
-cmd 'docker build -t .'
+cmd 'docker build -t my-app .'
 cmd 'docker tag my-app:$TIMESTAMP 542614731881.dkr.ecr.us-east-2.amazonaws.com/my-app:$TIMESTAMP'
 cmd 'docker push 542614731881.dkr.ecr.us-east-2.amazonaws.com/my-app:$TIMESTAMP'
