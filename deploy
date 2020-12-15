@@ -54,6 +54,9 @@ cmd "git pull"
 # Restores database from dump
 cmd 'refresh_mongodb.sh'
 
+# Make the deploy executable
+cmd 'chmod +x deploy'
+
 # Go to the app folder
 cd app
 
