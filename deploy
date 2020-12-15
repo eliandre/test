@@ -76,8 +76,8 @@ cmd "docker push 542614731881.dkr.ecr.us-east-2.amazonaws.com/my-app:$TIMESTAMP"
 if [ ! "$(docker ps -q -f name=my-app)" ]; then
     if [ "$(docker ps -aq -f status=exited -f name=my-app)" ]; then
         # cleanup
-        docker rm my-app
+        cmd "docker rm my-app"
     fi
     # run your container
-    docker run -d --name my-app
+    cmd "docker run -d --name my-app"
 fi
