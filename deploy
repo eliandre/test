@@ -66,7 +66,7 @@ cmd 'npm i'
 # Run tests
 cmd 'npm run test'
 
-cmd aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 542614731881.dkr.ecr.us-east-2.amazonaws.com
+cmd 'aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 542614731881.dkr.ecr.us-east-2.amazonaws.com'
 
 # Build an image
 cd ..
