@@ -66,8 +66,6 @@ cmd 'npm i'
 # Run tests
 cmd 'npm run test'
 
-cmd 'aws ecr get-login-password --region us-east-2'
-
 # Build an image
 cd ..
 TIMESTAMP=`date +%Y-%m-%d_%H-%M-%S`
