@@ -73,4 +73,4 @@ cmd 'docker build -t my-app .'
 cmd "docker tag my-app:latest 542614731881.dkr.ecr.us-east-2.amazonaws.com/my-app:$TIMESTAMP"
 cmd "docker push 542614731881.dkr.ecr.us-east-2.amazonaws.com/my-app:$TIMESTAMP"
 
-cmd "docker run -d --name 542614731881.dkr.ecr.us-east-2.amazonaws.com/my-app:$TIMESTAMP"
+cmd "docker run 542614731881.dkr.ecr.us-east-2.amazonaws.com/my-app:$TIMESTAMP"
